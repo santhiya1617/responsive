@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="sidenav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">About</a></li>
+
+        </ul>
+        <button onclick="closeNavbar()">close</button>
+    </nav>
+    <header>
+        <nav id="primary-nav">
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">contact</a>
+            <a href="">About</a>
+        </nav>
+        <button id="sidenav-button" onclick="openSideNav()">open Menu</button>
+    </header>
+    <aside>
+        <ul>
+            <li><a href="">Blog1</a></li>
+            <li><a href="">Blog2</a></li>
+            <li><a href="">Blog3</a></li>
+            <li><a href="">Blog4</a></li>
+        </ul>
+    </aside>
+    <main>
+        <article>
+            <h1>Blog 1</h1>
+            <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.The three types of CSS are external, internal, and inline. External CSS is a file that HTML files will link to. Internal CSS is specified at the beginning of an HTML document. Inline CSS is written for a specific element in the HTML document.</p>
+        </article>
+        <article>
+            <h1>Blog 2</h1>
+            <p>HTML stands for Hypertext Markup Language, and it's the code used to structure and define the content of a web page. HTML tells a web browser how to display text, images, and other media on a page.The role of HTML in web development is to provide the backbone and structure of a web page. It defines the layout and organization of content on a web page by using a ranked structure of elements.</p>
+        </article>
+        <article>
+            <h1>Blog 3</h1>
+            <p>Python is commonly used for developing websites and software, task automation, data analysis, and data visualization. Since it's relatively easy to learn, Python has been adopted by many non-programmers such as accountants and scientists, for a variety of everyday tasks, like organizing finances.Python is a general-purpose object-oriented programming language created by Guido van Rossum — which means that, unlike HTML, CSS, and JavaScript, it can be used for other types of programming, such as: back end development, software development, data science, and writing system scripts (automation), among other uses.</p>
+        </article>
+        <article>
+            <h1>Blog 4</h1>
+            <p>JavaScript is a scripting language for creating dynamic web page content. It creates elements for improving site visitors' interaction with web pages, such as dropdown menus, animated graphics, and dynamic background colors.One of the reasons behind JavaScript's popularity and widespread adoption is its versatility. It supports cross-platform development, and we can use it for both server-side and client-side applications. JS also has a massive active community of developers, making it easy for beginners to learn the language.</p>
+        </article>
+    </main>
+    <footer>
+        @copyright, reserved by Learnz
+     </footer>
+
+     <script>
+        function openSideNav() {
+            document.getElementById("sidenav").style.display = "block"
+        }
+
+        function closeNavbar() {
+            document.getElementById("sidenav").style.display ="none"
+        }
+     </script>
+    </body>
+    </html>
